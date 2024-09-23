@@ -77,8 +77,8 @@ torchrun --standalone --nproc_per_node=1 fid_all.py --num=70000 --images=/ffhq/e
 
 ## Checkpoints
 
-- CIFAR10 (uncond): [checkpoint]()
-- FFHQ : [checkpoint]()
+- CIFAR10 (uncond): [checkpoint](https://drive.google.com/file/d/1mgDSPvL9BnGsRhhySS41XEq03_W1ci-Y/view?usp=drive_link)
+- FFHQ : [checkpoint](https://drive.google.com/file/d/1p1PI4EU5NzX7B4X98L_XbfO2fiY96f7b/view?usp=drive_link)
 
 ## Citation
  ```
