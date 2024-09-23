@@ -29,14 +29,14 @@ Run the following commands to finetune a pretrained diffusion model with LoRA co
 LORA_FLAGS="--addlora=True --lorarank=4 --numbasis=18 --wmlp=128,64 --finetune=False --base_from_ckpt=True --baseckpt=/path/to/ckpt"
 
 
-torchrun --standalone --nproc_per_node=4 train.py --outdir=exp --cond=0 --arch=ddpmpp --batch=512 --dump=100 --duration=100 --data=datasets/cifar10-32x32.zip $LORA_FLAGS --cond=0
+torchrun --standalone --nproc_per_node=4 train.py --outdir=exp --cond=0 --arch=ddpmpp --batch=512 --dump=100 --duration=100 --data=/dataset/dir/cifar10-32x32.zip $LORA_FLAGS --cond=0
 ```
 
 **FFHQ**
 ```
 LORA_FLAGS="--addlora=True --lorarank=4 --numbasis=20 --wmlp=128,64 --finetune=False --base_from_ckpt=True --baseckpt=/path/to/ckpt"
 
-torchrun --standalone --nproc_per_node=8 train.py --outdir=exp --cond=0 --arch=ddpmpp --batch=256 --dump=100 --duration=100 --data=datasets/ffhq-64x64.zip --cres=1,2,2,2 --lr=2e-4 --dropout=0.05 --augment=0.15 $LORA_FLAGS
+torchrun --standalone --nproc_per_node=8 train.py --outdir=exp --cond=0 --arch=ddpmpp --batch=256 --dump=100 --duration=100 --data=/dataset/dir/ffhq-64x64.zip --cres=1,2,2,2 --lr=2e-4 --dropout=0.05 --augment=0.15 $LORA_FLAGS
 ```
 
 
