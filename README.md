@@ -86,7 +86,7 @@ torchrun --standalone --nproc_per_node=1 fid_all.py --num=70000 --images=/ffhq/e
       title={Simple Drop-in LoRA Conditioning on Attention Layers Will Improve Your Diffusion Model}, 
       author={Joo Young Choi and Jaesung R. Park and Inkyu Park and Jaewoong Cho and Albert No and Ernest K. Ryu},
       year={2024},
-      journal={Transactions on Machine Learning Researche}
+      journal={Transactions on Machine Learning Research}
 }
 ```
 
